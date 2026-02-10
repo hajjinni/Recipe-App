@@ -66,7 +66,7 @@ The project focuses on implementing core React concepts, creating a responsive u
 ```bash
 npm install
 
-### Run the Application
+## Run the Application
  npm start
 
 ### The app will run at:
