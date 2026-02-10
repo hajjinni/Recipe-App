@@ -33,7 +33,7 @@ The project focuses on implementing core React concepts, creating a responsive u
   - Video link (if available)
 - Easy navigation back to the main recipe list
 
-### Favorites (Optional)
+### Favorites
 - Mark recipes as favorites
 - Favorites are stored in `localStorage`
 - Favorites persist across browser sessions
@@ -65,3 +65,9 @@ The project focuses on implementing core React concepts, creating a responsive u
 ### Install Dependencies
 ```bash
 npm install
+
+### Run the Application
+ npm start
+
+### The app will run at:
+ http://localhost:3000
