@@ -63,11 +63,13 @@ The project focuses on implementing core React concepts, creating a responsive u
 ## Getting Started
 
 ### Install Dependencies
-```bash
+
 npm install
 
-## Run the Application
+### Run the Application
+
  npm start
 
 ### The app will run at:
+
  http://localhost:3000
