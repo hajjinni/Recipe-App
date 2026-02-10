@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { FavoritesProvider } from "./context/FavoritesContext";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import RecipeDetails from "./pages/RecipeDetails";
+import Favorites from "./pages/Favorites";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FavoritesProvider>
+      <Router>
+        <div className="min-h-screen bg-gradient-to-b from-pink-100 to-red-50">
+          <Header />
+
+          <main className="max-w-7xl mx-auto px-4 py-6">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/recipe/:id" element={<RecipeDetails />} />
+              <Route path="/favorites" element={<Favorites />} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+    </FavoritesProvider>
   );
 }
 
